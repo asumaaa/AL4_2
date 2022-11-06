@@ -89,7 +89,7 @@ Object3d * Object3d::Create()
 {
 
 	// 3Dオブジェクトのインスタンスを生成
-	Object3d* object3d = new Object3d();
+	Object3d* object3d = new Object3d(); 
 	if (object3d == nullptr) {
 		return nullptr;
 	}
