@@ -32,8 +32,8 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int)
 #pragma endregion
 
 	// ゲームシーンの初期化
-	gameScene = new GameScene();
-	gameScene->Initialize(dxCommon, input);
+	/*gameScene = new GameScene();
+	gameScene->Initialize(dxCommon, input);*/
 	
 	// メインループ
 	while (true)
@@ -44,17 +44,17 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int)
 		// 入力関連の毎フレーム処理
 		input->Update();
 		// ゲームシーンの毎フレーム処理
-		gameScene->Update();
+		/*gameScene->Update();*/
 
 		// 描画開始
 		dxCommon->PreDraw();
 		// ゲームシーンの描画
-		gameScene->Draw();
+		/*gameScene->Draw();*/
 		// 描画終了
 		dxCommon->PostDraw();
 	}
 	// 各種解放
-	delete gameScene;
+	/*delete gameScene;*/
 	delete input;
 
 	// DirectX終了処理
